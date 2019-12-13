@@ -1,21 +1,24 @@
-# cli-example-service-plugin
+# Template for generated CLI plugins
 
-CLI Plugin for the Example Service. This code is automatically generated from an OpenAPI Definition.
+This template provides the structure to generate code into, in order to have a fully-functioning CLI plugin.
 
-## Testing
-### Build the code
-Assuming the IBM Cloud CLI is already installed:  
-- `go build main.go`  
-- `ibmcloud plugin install main`
+## Getting Started
+- Clone this repository
+- Run the generator with the language "CLI" and the output path set to the filepath of this repository
+- Create a Go module to manage dependencies:
+`go mod init <package-name>`
 
-### Authenticate
-Currently, the CLI Plugin relies on external configuration for authentication. Either create a file called `ibm-credentials.env` that includes the authentication data or set environment variables.
-Either way, the credentials need to have the format `<service-name>_<service-version>_APIKEY`.
+Package name is configurable but should match the package name given for CLI plugin in the API Definition used to generate the repo.
 
-e.g. `EXAMPLE_SERVICE_V1_APIKEY=abcd1234`
+- The IBM Cloud CLI SDK uses a version of `go-i18n` that is incompatible with Go Modules. Install a the following version:
+`go get github.com/nicksnyder/go-i18n/i18n@v1.10.1`
 
-### Usage
-- `ibmcloud my-plugin example-service <command-name> <flags>`
+- Install the dependencies and build the code:
+`go build main.go`
 
-Example:
-`ibmcloud my-plugin example-service list-resources`
+- Install this locally built plugin to be used with the `ibmcloud` CLI tool:
+`ibmcloud plugin install main`
+
+If successful, your plugin is now ready for local use.
+
+Note: If you are generating more than one service for a single plugin, the file `plugin/commands/root.go` should be hand-maintained as generating it for each service will overwrite the contents of the last.
