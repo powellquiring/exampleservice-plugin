@@ -43,6 +43,7 @@ func getListVoicesCommand() *cobra.Command {
 }
 
 func ListVoices(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -79,6 +80,7 @@ func getGetVoiceCommand() *cobra.Command {
 }
 
 func GetVoice(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -133,6 +135,7 @@ func getSynthesizeCommand() *cobra.Command {
 }
 
 func Synthesize(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -201,6 +204,7 @@ func getGetPronunciationCommand() *cobra.Command {
 }
 
 func GetPronunciation(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -257,6 +261,7 @@ func getCreateVoiceModelCommand() *cobra.Command {
 }
 
 func CreateVoiceModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -305,6 +310,7 @@ func getListVoiceModelsCommand() *cobra.Command {
 }
 
 func ListVoiceModels(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -352,6 +358,7 @@ func getUpdateVoiceModelCommand() *cobra.Command {
 }
 
 func UpdateVoiceModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -408,6 +415,7 @@ func getGetVoiceModelCommand() *cobra.Command {
 }
 
 func GetVoiceModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -449,6 +457,7 @@ func getDeleteVoiceModelCommand() *cobra.Command {
 }
 
 func DeleteVoiceModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -493,6 +502,7 @@ func getAddWordsCommand() *cobra.Command {
 }
 
 func AddWords(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -543,6 +553,7 @@ func getListWordsCommand() *cobra.Command {
 }
 
 func ListWords(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -592,6 +603,7 @@ func getAddWordCommand() *cobra.Command {
 }
 
 func AddWord(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -647,6 +659,7 @@ func getGetWordCommand() *cobra.Command {
 }
 
 func GetWord(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -694,6 +707,7 @@ func getDeleteWordCommand() *cobra.Command {
 }
 
 func DeleteWord(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,
@@ -738,6 +752,7 @@ func getDeleteUserDataCommand() *cobra.Command {
 }
 
 func DeleteUserData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	textToSpeech, textToSpeechErr := texttospeechv1.
 		NewTextToSpeechV1(&texttospeechv1.TextToSpeechV1Options{
 			Authenticator: Authenticator,

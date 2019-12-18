@@ -53,6 +53,7 @@ func getConvertToHTMLCommand() *cobra.Command {
 }
 
 func ConvertToHTML(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -112,6 +113,7 @@ func getClassifyElementsCommand() *cobra.Command {
 }
 
 func ClassifyElements(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -171,6 +173,7 @@ func getExtractTablesCommand() *cobra.Command {
 }
 
 func ExtractTables(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -239,6 +242,7 @@ func getCompareDocumentsCommand() *cobra.Command {
 }
 
 func CompareDocuments(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -313,6 +317,7 @@ func getAddFeedbackCommand() *cobra.Command {
 }
 
 func AddFeedback(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -398,6 +403,7 @@ func getListFeedbackCommand() *cobra.Command {
 }
 
 func ListFeedback(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -501,6 +507,7 @@ func getGetFeedbackCommand() *cobra.Command {
 }
 
 func GetFeedback(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -552,6 +559,7 @@ func getDeleteFeedbackCommand() *cobra.Command {
 }
 
 func DeleteFeedback(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -621,6 +629,7 @@ func getCreateBatchCommand() *cobra.Command {
 }
 
 func CreateBatch(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -691,6 +700,7 @@ func getListBatchesCommand() *cobra.Command {
 }
 
 func ListBatches(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -728,6 +738,7 @@ func getGetBatchCommand() *cobra.Command {
 }
 
 func GetBatch(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,
@@ -779,6 +790,7 @@ func getUpdateBatchCommand() *cobra.Command {
 }
 
 func UpdateBatch(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	compareComply, compareComplyErr := comparecomplyv1.
 		NewCompareComplyV1(&comparecomplyv1.CompareComplyV1Options{
 			Authenticator: Authenticator,

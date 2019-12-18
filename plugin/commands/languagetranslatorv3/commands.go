@@ -53,6 +53,7 @@ func getTranslateCommand() *cobra.Command {
 }
 
 func Translate(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -105,6 +106,7 @@ func getListIdentifiableLanguagesCommand() *cobra.Command {
 }
 
 func ListIdentifiableLanguages(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -142,6 +144,7 @@ func getIdentifyCommand() *cobra.Command {
 }
 
 func Identify(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -191,6 +194,7 @@ func getListModelsCommand() *cobra.Command {
 }
 
 func ListModels(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -249,6 +253,7 @@ func getCreateModelCommand() *cobra.Command {
 }
 
 func CreateModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -310,6 +315,7 @@ func getDeleteModelCommand() *cobra.Command {
 }
 
 func DeleteModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -356,6 +362,7 @@ func getGetModelCommand() *cobra.Command {
 }
 
 func GetModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -399,6 +406,7 @@ func getListDocumentsCommand() *cobra.Command {
 }
 
 func ListDocuments(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -449,6 +457,7 @@ func getTranslateDocumentCommand() *cobra.Command {
 }
 
 func TranslateDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -516,6 +525,7 @@ func getGetDocumentStatusCommand() *cobra.Command {
 }
 
 func GetDocumentStatus(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -560,6 +570,7 @@ func getDeleteDocumentCommand() *cobra.Command {
 }
 
 func DeleteDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,
@@ -610,6 +621,7 @@ func getGetTranslatedDocumentCommand() *cobra.Command {
 }
 
 func GetTranslatedDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	languageTranslator, languageTranslatorErr := languagetranslatorv3.
 		NewLanguageTranslatorV3(&languagetranslatorv3.LanguageTranslatorV3Options{
 			Authenticator: Authenticator,

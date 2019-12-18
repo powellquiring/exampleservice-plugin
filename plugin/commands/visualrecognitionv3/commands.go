@@ -61,6 +61,7 @@ func getClassifyCommand() *cobra.Command {
 }
 
 func Classify(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -138,6 +139,7 @@ func getCreateClassifierCommand() *cobra.Command {
 }
 
 func CreateClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -203,6 +205,7 @@ func getListClassifiersCommand() *cobra.Command {
 }
 
 func ListClassifiers(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -249,6 +252,7 @@ func getGetClassifierCommand() *cobra.Command {
 }
 
 func GetClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -301,6 +305,7 @@ func getUpdateClassifierCommand() *cobra.Command {
 }
 
 func UpdateClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -365,6 +370,7 @@ func getDeleteClassifierCommand() *cobra.Command {
 }
 
 func DeleteClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -413,6 +419,7 @@ func getGetCoreMlModelCommand() *cobra.Command {
 }
 
 func GetCoreMlModel(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,
@@ -467,6 +474,7 @@ func getDeleteUserDataCommand() *cobra.Command {
 }
 
 func DeleteUserData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv3.
 		NewVisualRecognitionV3(&visualrecognitionv3.VisualRecognitionV3Options{
 			Authenticator: Authenticator,

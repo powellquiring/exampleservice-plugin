@@ -60,6 +60,7 @@ func getMessageCommand() *cobra.Command {
 }
 
 func Message(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -152,6 +153,7 @@ func getListWorkspacesCommand() *cobra.Command {
 }
 
 func ListWorkspaces(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -224,6 +226,7 @@ func getCreateWorkspaceCommand() *cobra.Command {
 }
 
 func CreateWorkspace(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -327,6 +330,7 @@ func getGetWorkspaceCommand() *cobra.Command {
 }
 
 func GetWorkspace(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -404,6 +408,7 @@ func getUpdateWorkspaceCommand() *cobra.Command {
 }
 
 func UpdateWorkspace(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -505,6 +510,7 @@ func getDeleteWorkspaceCommand() *cobra.Command {
 }
 
 func DeleteWorkspace(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -561,6 +567,7 @@ func getListIntentsCommand() *cobra.Command {
 }
 
 func ListIntents(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -629,6 +636,7 @@ func getCreateIntentCommand() *cobra.Command {
 }
 
 func CreateIntent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -695,6 +703,7 @@ func getGetIntentCommand() *cobra.Command {
 }
 
 func GetIntent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -759,6 +768,7 @@ func getUpdateIntentCommand() *cobra.Command {
 }
 
 func UpdateIntent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -822,6 +832,7 @@ func getDeleteIntentCommand() *cobra.Command {
 }
 
 func DeleteIntent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -882,6 +893,7 @@ func getListExamplesCommand() *cobra.Command {
 }
 
 func ListExamples(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -951,6 +963,7 @@ func getCreateExampleCommand() *cobra.Command {
 }
 
 func CreateExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1018,6 +1031,7 @@ func getGetExampleCommand() *cobra.Command {
 }
 
 func GetExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1083,6 +1097,7 @@ func getUpdateExampleCommand() *cobra.Command {
 }
 
 func UpdateExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1149,6 +1164,7 @@ func getDeleteExampleCommand() *cobra.Command {
 }
 
 func DeleteExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1209,6 +1225,7 @@ func getListCounterexamplesCommand() *cobra.Command {
 }
 
 func ListCounterexamples(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1270,6 +1287,7 @@ func getCreateCounterexampleCommand() *cobra.Command {
 }
 
 func CreateCounterexample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1324,6 +1342,7 @@ func getGetCounterexampleCommand() *cobra.Command {
 }
 
 func GetCounterexample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1381,6 +1400,7 @@ func getUpdateCounterexampleCommand() *cobra.Command {
 }
 
 func UpdateCounterexample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1434,6 +1454,7 @@ func getDeleteCounterexampleCommand() *cobra.Command {
 }
 
 func DeleteCounterexample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1493,6 +1514,7 @@ func getListEntitiesCommand() *cobra.Command {
 }
 
 func ListEntities(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1565,6 +1587,7 @@ func getCreateEntityCommand() *cobra.Command {
 }
 
 func CreateEntity(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1641,6 +1664,7 @@ func getGetEntityCommand() *cobra.Command {
 }
 
 func GetEntity(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1709,6 +1733,7 @@ func getUpdateEntityCommand() *cobra.Command {
 }
 
 func UpdateEntity(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1782,6 +1807,7 @@ func getDeleteEntityCommand() *cobra.Command {
 }
 
 func DeleteEntity(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1838,6 +1864,7 @@ func getListMentionsCommand() *cobra.Command {
 }
 
 func ListMentions(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1906,6 +1933,7 @@ func getListValuesCommand() *cobra.Command {
 }
 
 func ListValues(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -1984,6 +2012,7 @@ func getCreateValueCommand() *cobra.Command {
 }
 
 func CreateValue(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2062,6 +2091,7 @@ func getGetValueCommand() *cobra.Command {
 }
 
 func GetValue(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2136,6 +2166,7 @@ func getUpdateValueCommand() *cobra.Command {
 }
 
 func UpdateValue(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2211,6 +2242,7 @@ func getDeleteValueCommand() *cobra.Command {
 }
 
 func DeleteValue(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2277,6 +2309,7 @@ func getListSynonymsCommand() *cobra.Command {
 }
 
 func ListSynonyms(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2350,6 +2383,7 @@ func getCreateSynonymCommand() *cobra.Command {
 }
 
 func CreateSynonym(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2416,6 +2450,7 @@ func getGetSynonymCommand() *cobra.Command {
 }
 
 func GetSynonym(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2485,6 +2520,7 @@ func getUpdateSynonymCommand() *cobra.Command {
 }
 
 func UpdateSynonym(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2550,6 +2586,7 @@ func getDeleteSynonymCommand() *cobra.Command {
 }
 
 func DeleteSynonym(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2613,6 +2650,7 @@ func getListDialogNodesCommand() *cobra.Command {
 }
 
 func ListDialogNodes(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2708,6 +2746,7 @@ func getCreateDialogNodeCommand() *cobra.Command {
 }
 
 func CreateDialogNode(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2833,6 +2872,7 @@ func getGetDialogNodeCommand() *cobra.Command {
 }
 
 func GetDialogNode(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -2924,6 +2964,7 @@ func getUpdateDialogNodeCommand() *cobra.Command {
 }
 
 func UpdateDialogNode(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -3048,6 +3089,7 @@ func getDeleteDialogNodeCommand() *cobra.Command {
 }
 
 func DeleteDialogNode(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -3105,6 +3147,7 @@ func getListLogsCommand() *cobra.Command {
 }
 
 func ListLogs(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -3169,6 +3212,7 @@ func getListAllLogsCommand() *cobra.Command {
 }
 
 func ListAllLogs(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,
@@ -3222,6 +3266,7 @@ func getDeleteUserDataCommand() *cobra.Command {
 }
 
 func DeleteUserData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv1.
 		NewAssistantV1(&assistantv1.AssistantV1Options{
 			Authenticator: Authenticator,

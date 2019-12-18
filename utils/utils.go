@@ -57,7 +57,6 @@ func PrintOutput(result interface{}, outputFormat string, jmesQuery string) {
 
 	default:
 		// default to "table" - this will a dynamically generated table
-		ui.Say("...")
 		DoTheTable(result, jmesQuery)
 	}
 }
@@ -67,5 +66,12 @@ func HandleError(err error) {
 	if err != nil {
 		ui.Failed(err.Error())
 		os.Exit(1)
+	}
+}
+
+func ConfirmRunningCommand(outputFormat string) {
+	ui = terminal.NewStdUI()
+	if strings.ToLower(outputFormat) != "json" {
+		ui.Say("...")
 	}
 }

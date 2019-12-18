@@ -46,6 +46,7 @@ func getCreateSessionCommand() *cobra.Command {
 }
 
 func CreateSession(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv2.
 		NewAssistantV2(&assistantv2.AssistantV2Options{
 			Authenticator: Authenticator,
@@ -93,6 +94,7 @@ func getDeleteSessionCommand() *cobra.Command {
 }
 
 func DeleteSession(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv2.
 		NewAssistantV2(&assistantv2.AssistantV2Options{
 			Authenticator: Authenticator,
@@ -149,6 +151,7 @@ func getMessageCommand() *cobra.Command {
 }
 
 func Message(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	assistant, assistantErr := assistantv2.
 		NewAssistantV2(&assistantv2.AssistantV2Options{
 			Authenticator: Authenticator,

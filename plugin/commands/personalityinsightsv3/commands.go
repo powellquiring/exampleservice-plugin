@@ -61,6 +61,7 @@ func getProfileCommand() *cobra.Command {
 }
 
 func Profile(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	personalityInsights, personalityInsightsErr := personalityinsightsv3.
 		NewPersonalityInsightsV3(&personalityinsightsv3.PersonalityInsightsV3Options{
 			Authenticator: Authenticator,
@@ -147,6 +148,7 @@ func getProfileAsCsvCommand() *cobra.Command {
 }
 
 func ProfileAsCsv(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	personalityInsights, personalityInsightsErr := personalityinsightsv3.
 		NewPersonalityInsightsV3(&personalityinsightsv3.PersonalityInsightsV3Options{
 			Authenticator: Authenticator,

@@ -57,6 +57,7 @@ func getToneCommand() *cobra.Command {
 }
 
 func Tone(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	toneAnalyzer, toneAnalyzerErr := toneanalyzerv3.
 		NewToneAnalyzerV3(&toneanalyzerv3.ToneAnalyzerV3Options{
 			Authenticator: Authenticator,
@@ -129,6 +130,7 @@ func getToneChatCommand() *cobra.Command {
 }
 
 func ToneChat(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	toneAnalyzer, toneAnalyzerErr := toneanalyzerv3.
 		NewToneAnalyzerV3(&toneanalyzerv3.ToneAnalyzerV3Options{
 			Authenticator: Authenticator,

@@ -57,6 +57,7 @@ func getAnalyzeCommand() *cobra.Command {
 }
 
 func Analyze(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -143,6 +144,7 @@ func getCreateCollectionCommand() *cobra.Command {
 }
 
 func CreateCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -189,6 +191,7 @@ func getListCollectionsCommand() *cobra.Command {
 }
 
 func ListCollections(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -226,6 +229,7 @@ func getGetCollectionCommand() *cobra.Command {
 }
 
 func GetCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -276,6 +280,7 @@ func getUpdateCollectionCommand() *cobra.Command {
 }
 
 func UpdateCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -326,6 +331,7 @@ func getDeleteCollectionCommand() *cobra.Command {
 }
 
 func DeleteCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -378,6 +384,7 @@ func getAddImagesCommand() *cobra.Command {
 }
 
 func AddImages(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -460,6 +467,7 @@ func getListImagesCommand() *cobra.Command {
 }
 
 func ListImages(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -509,6 +517,7 @@ func getGetImageDetailsCommand() *cobra.Command {
 }
 
 func GetImageDetails(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -559,6 +568,7 @@ func getDeleteImageCommand() *cobra.Command {
 }
 
 func DeleteImage(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -615,6 +625,7 @@ func getGetJpegImageCommand() *cobra.Command {
 }
 
 func GetJpegImage(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -677,6 +688,7 @@ func getTrainCommand() *cobra.Command {
 }
 
 func Train(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -728,6 +740,7 @@ func getAddImageTrainingDataCommand() *cobra.Command {
 }
 
 func AddImageTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,
@@ -782,6 +795,7 @@ func getDeleteUserDataCommand() *cobra.Command {
 }
 
 func DeleteUserData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	visualRecognition, visualRecognitionErr := visualrecognitionv4.
 		NewVisualRecognitionV4(&visualrecognitionv4.VisualRecognitionV4Options{
 			Authenticator: Authenticator,

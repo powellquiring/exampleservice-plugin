@@ -48,6 +48,7 @@ func getClassifyCommand() *cobra.Command {
 }
 
 func Classify(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,
@@ -97,6 +98,7 @@ func getClassifyCollectionCommand() *cobra.Command {
 }
 
 func ClassifyCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,
@@ -150,6 +152,7 @@ func getCreateClassifierCommand() *cobra.Command {
 }
 
 func CreateClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,
@@ -199,6 +202,7 @@ func getListClassifiersCommand() *cobra.Command {
 }
 
 func ListClassifiers(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,
@@ -233,6 +237,7 @@ func getGetClassifierCommand() *cobra.Command {
 }
 
 func GetClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,
@@ -274,6 +279,7 @@ func getDeleteClassifierCommand() *cobra.Command {
 }
 
 func DeleteClassifier(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	naturalLanguageClassifier, naturalLanguageClassifierErr := naturallanguageclassifierv1.
 		NewNaturalLanguageClassifierV1(&naturallanguageclassifierv1.NaturalLanguageClassifierV1Options{
 			Authenticator: Authenticator,

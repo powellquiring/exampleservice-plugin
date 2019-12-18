@@ -52,6 +52,7 @@ func getCreateEnvironmentCommand() *cobra.Command {
 }
 
 func CreateEnvironment(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -103,6 +104,7 @@ func getListEnvironmentsCommand() *cobra.Command {
 }
 
 func ListEnvironments(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -149,6 +151,7 @@ func getGetEnvironmentCommand() *cobra.Command {
 }
 
 func GetEnvironment(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -201,6 +204,7 @@ func getUpdateEnvironmentCommand() *cobra.Command {
 }
 
 func UpdateEnvironment(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -256,6 +260,7 @@ func getDeleteEnvironmentCommand() *cobra.Command {
 }
 
 func DeleteEnvironment(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -305,6 +310,7 @@ func getListFieldsCommand() *cobra.Command {
 }
 
 func ListFields(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -367,6 +373,7 @@ func getCreateConfigurationCommand() *cobra.Command {
 }
 
 func CreateConfiguration(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -449,6 +456,7 @@ func getListConfigurationsCommand() *cobra.Command {
 }
 
 func ListConfigurations(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -501,6 +509,7 @@ func getGetConfigurationCommand() *cobra.Command {
 }
 
 func GetConfiguration(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -566,6 +575,7 @@ func getUpdateConfigurationCommand() *cobra.Command {
 }
 
 func UpdateConfiguration(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -652,6 +662,7 @@ func getDeleteConfigurationCommand() *cobra.Command {
 }
 
 func DeleteConfiguration(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -710,6 +721,7 @@ func getCreateCollectionCommand() *cobra.Command {
 }
 
 func CreateCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -770,6 +782,7 @@ func getListCollectionsCommand() *cobra.Command {
 }
 
 func ListCollections(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -822,6 +835,7 @@ func getGetCollectionCommand() *cobra.Command {
 }
 
 func GetCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -880,6 +894,7 @@ func getUpdateCollectionCommand() *cobra.Command {
 }
 
 func UpdateCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -941,6 +956,7 @@ func getDeleteCollectionCommand() *cobra.Command {
 }
 
 func DeleteCollection(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -993,6 +1009,7 @@ func getListCollectionFieldsCommand() *cobra.Command {
 }
 
 func ListCollectionFields(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1045,6 +1062,7 @@ func getListExpansionsCommand() *cobra.Command {
 }
 
 func ListExpansions(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1100,6 +1118,7 @@ func getCreateExpansionsCommand() *cobra.Command {
 }
 
 func CreateExpansions(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1157,6 +1176,7 @@ func getDeleteExpansionsCommand() *cobra.Command {
 }
 
 func DeleteExpansions(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1209,6 +1229,7 @@ func getGetTokenizationDictionaryStatusCommand() *cobra.Command {
 }
 
 func GetTokenizationDictionaryStatus(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1263,6 +1284,7 @@ func getCreateTokenizationDictionaryCommand() *cobra.Command {
 }
 
 func CreateTokenizationDictionary(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1320,6 +1342,7 @@ func getDeleteTokenizationDictionaryCommand() *cobra.Command {
 }
 
 func DeleteTokenizationDictionary(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1372,6 +1395,7 @@ func getGetStopwordListStatusCommand() *cobra.Command {
 }
 
 func GetStopwordListStatus(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1430,6 +1454,7 @@ func getCreateStopwordListCommand() *cobra.Command {
 }
 
 func CreateStopwordList(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1489,6 +1514,7 @@ func getDeleteStopwordListCommand() *cobra.Command {
 }
 
 func DeleteStopwordList(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1549,6 +1575,7 @@ func getAddDocumentCommand() *cobra.Command {
 }
 
 func AddDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1619,6 +1646,7 @@ func getGetDocumentStatusCommand() *cobra.Command {
 }
 
 func GetDocumentStatus(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1685,6 +1713,7 @@ func getUpdateDocumentCommand() *cobra.Command {
 }
 
 func UpdateDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1758,6 +1787,7 @@ func getDeleteDocumentCommand() *cobra.Command {
 }
 
 func DeleteDocument(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -1855,6 +1885,7 @@ func getQueryCommand() *cobra.Command {
 }
 
 func Query(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2004,6 +2035,7 @@ func getQueryNoticesCommand() *cobra.Command {
 }
 
 func QueryNotices(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2146,6 +2178,7 @@ func getFederatedQueryCommand() *cobra.Command {
 }
 
 func FederatedQuery(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2284,6 +2317,7 @@ func getFederatedQueryNoticesCommand() *cobra.Command {
 }
 
 func FederatedQueryNotices(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2381,6 +2415,7 @@ func getGetAutocompletionCommand() *cobra.Command {
 }
 
 func GetAutocompletion(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2442,6 +2477,7 @@ func getListTrainingDataCommand() *cobra.Command {
 }
 
 func ListTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2500,6 +2536,7 @@ func getAddTrainingDataCommand() *cobra.Command {
 }
 
 func AddTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2563,6 +2600,7 @@ func getDeleteAllTrainingDataCommand() *cobra.Command {
 }
 
 func DeleteAllTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2618,6 +2656,7 @@ func getGetTrainingDataCommand() *cobra.Command {
 }
 
 func GetTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2674,6 +2713,7 @@ func getDeleteTrainingDataCommand() *cobra.Command {
 }
 
 func DeleteTrainingData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2732,6 +2772,7 @@ func getListTrainingExamplesCommand() *cobra.Command {
 }
 
 func ListTrainingExamples(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2796,6 +2837,7 @@ func getCreateTrainingExampleCommand() *cobra.Command {
 }
 
 func CreateTrainingExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2864,6 +2906,7 @@ func getDeleteTrainingExampleCommand() *cobra.Command {
 }
 
 func DeleteTrainingExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -2932,6 +2975,7 @@ func getUpdateTrainingExampleCommand() *cobra.Command {
 }
 
 func UpdateTrainingExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3002,6 +3046,7 @@ func getGetTrainingExampleCommand() *cobra.Command {
 }
 
 func GetTrainingExample(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3055,6 +3100,7 @@ func getDeleteUserDataCommand() *cobra.Command {
 }
 
 func DeleteUserData(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3104,6 +3150,7 @@ func getCreateEventCommand() *cobra.Command {
 }
 
 func CreateEvent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3164,6 +3211,7 @@ func getQueryLogCommand() *cobra.Command {
 }
 
 func QueryLog(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3225,6 +3273,7 @@ func getGetMetricsQueryCommand() *cobra.Command {
 }
 
 func GetMetricsQuery(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3286,6 +3335,7 @@ func getGetMetricsQueryEventCommand() *cobra.Command {
 }
 
 func GetMetricsQueryEvent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3347,6 +3397,7 @@ func getGetMetricsQueryNoResultsCommand() *cobra.Command {
 }
 
 func GetMetricsQueryNoResults(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3408,6 +3459,7 @@ func getGetMetricsEventRateCommand() *cobra.Command {
 }
 
 func GetMetricsEventRate(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3465,6 +3517,7 @@ func getGetMetricsQueryTokenEventCommand() *cobra.Command {
 }
 
 func GetMetricsQueryTokenEvent(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3511,6 +3564,7 @@ func getListCredentialsCommand() *cobra.Command {
 }
 
 func ListCredentials(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3563,6 +3617,7 @@ func getCreateCredentialsCommand() *cobra.Command {
 }
 
 func CreateCredentials(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3625,6 +3680,7 @@ func getGetCredentialsCommand() *cobra.Command {
 }
 
 func GetCredentials(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3683,6 +3739,7 @@ func getUpdateCredentialsCommand() *cobra.Command {
 }
 
 func UpdateCredentials(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3748,6 +3805,7 @@ func getDeleteCredentialsCommand() *cobra.Command {
 }
 
 func DeleteCredentials(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3797,6 +3855,7 @@ func getListGatewaysCommand() *cobra.Command {
 }
 
 func ListGateways(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3845,6 +3904,7 @@ func getCreateGatewayCommand() *cobra.Command {
 }
 
 func CreateGateway(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3897,6 +3957,7 @@ func getGetGatewayCommand() *cobra.Command {
 }
 
 func GetGateway(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
@@ -3949,6 +4010,7 @@ func getDeleteGatewayCommand() *cobra.Command {
 }
 
 func DeleteGateway(cmd *cobra.Command, args []string) {
+	utils.ConfirmRunningCommand(OutputFormat)
 	discovery, discoveryErr := discoveryv1.
 		NewDiscoveryV1(&discoveryv1.DiscoveryV1Options{
 			Authenticator: Authenticator,
