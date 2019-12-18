@@ -1,7 +1,7 @@
 package version
 
 // plugin version
-const PLUGIN_VERSION = "0.0.1"
+const PLUGIN_VERSION = "0.0.2"
 
 // plugin major version
 const PLUGIN_MAJOR_VERSION = 0
@@ -10,4 +10,4 @@ const PLUGIN_MAJOR_VERSION = 0
 const PLUGIN_MINOR_VERSION = 0
 
 // plugin build version
-const PLUGIN_BUILD_VERSION = 1
+const PLUGIN_BUILD_VERSION = 2
