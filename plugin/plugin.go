@@ -18,6 +18,7 @@ package plugin
 
 import (
 	"cli-watson-plugin/plugin/commands"
+	"cli-watson-plugin/plugin/version"
 	"github.com/IBM-Cloud/ibm-cloud-cli-sdk/bluemix/terminal"
 	"github.com/IBM-Cloud/ibm-cloud-cli-sdk/plugin"
 )
@@ -32,9 +33,9 @@ func (watson *Plugin) GetMetadata() plugin.PluginMetadata {
 	return plugin.PluginMetadata{ // a lot of things in here can be separated out as variables, etc
 		Name: PluginName,
 		Version: plugin.VersionType{
-			Major: 0,
-			Minor: 0,
-			Build: 2,
+			Major: version.PLUGIN_MAJOR_VERSION,
+			Minor: version.PLUGIN_MINOR_VERSION,
+			Build: version.PLUGIN_BUILD_VERSION,
 		},
 		MinCliVersion: plugin.VersionType{
 			Major: 0,
