@@ -1,3 +1,4 @@
 main
 ibm-credentials.env
 resources/
+bin/
